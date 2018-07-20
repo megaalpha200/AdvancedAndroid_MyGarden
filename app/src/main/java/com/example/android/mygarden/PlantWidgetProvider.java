@@ -21,7 +21,6 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
-import android.view.View;
 import android.widget.RemoteViews;
 
 import com.example.android.mygarden.provider.PlantContract;
@@ -34,7 +33,7 @@ public class PlantWidgetProvider extends AppWidgetProvider {
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int imgRes, long plantID, boolean canWater, int appWidgetId) {
 
-        // TODO (3): Set the click handler to open the DetailActivity for plant ID,
+        // TODO DONE(3): Set the click handler to open the DetailActivity for plant ID,
         // or the MainActivity if plant ID is invalid
         // Create an Intent to launch MainActivity when clicked
         Intent intent;
